@@ -1,0 +1,184 @@
+.sideCart {
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 650;
+  transition: transform 0.4s ease-out;
+}
+
+.open {
+  transform: translateX(0);
+}
+.close {
+  transform: translateX(100%);
+}
+
+.closeSideCart {
+  position: fixed;
+  top: 10px;
+  right: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.closeSideCart:hover {
+  color: #ceae6d;
+  transition: color 0.2s;
+}
+.sideCartBody {
+  padding: 0 20px;
+  height: 90%;
+  margin-top: 20%;
+}
+.title {
+  width: 100%;
+  text-align: left;
+  height: 10%;
+}
+.title h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.cartItems {
+  width: 100%;
+  height: 280px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.cartItems::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50%;
+}
+
+.cartItems::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cartItems::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.cartItems::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.cartItem {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding-bottom: 15px;
+}
+
+.productImg {
+  width: 70px;
+  height: 100px;
+}
+.productImg img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.productTitle {
+  cursor: pointer;
+}
+.productTitle svg:hover {
+  color: #ceae6d;
+  transition: color 0.3s;
+}
+.productDesc {
+  padding-right: 10px;
+}
+.quantity {
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-weight: 400;
+}
+.price {
+  font-weight: 700;
+  color: gray;
+}
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideCartBody button {
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: 1px solid gray;
+  margin: 10px 0;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+.sideCartBody button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  opacity: 0;
+  border-radius: 20px;
+  background: #ceae6d;
+  animation: buttonAnimation 0.5s ease-out forwards;
+}
+@keyframes buttonAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+
+    transform: translateY(-100%);
+  }
+}
+
+.sideCartBody button:hover {
+  color: #fff;
+}
+.sideCartBody button:hover::after {
+  animation: buttonHoverAnimation 0.5s forwards;
+}
+.purchaseButtons {
+  margin-top: 15px;
+}
+
+.hoverStyling {
+  background-color: #ceae6d;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes buttonHoverAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  66% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

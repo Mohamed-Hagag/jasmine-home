@@ -1,0 +1,16 @@
+.btnUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #103426;
+  transition: 0.2s ease-in-out;
+  border-radius: 50%;
+}
+.btnUp:hover {
+  color: #ceae6d;
+  background-color: #fff;
+  border: #103426;
+}

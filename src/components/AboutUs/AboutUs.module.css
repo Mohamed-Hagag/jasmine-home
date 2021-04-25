@@ -1,0 +1,40 @@
+.aboutUs {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+@media (max-width: 500px) {
+  .aboutUs {
+    height: 550px;
+  }
+}
+.aboutTitle {
+  text-align: center;
+}
+.aboutTitle p {
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: #ceae6d;
+}
+.aboutTitle h2 {
+  padding-bottom: 7px;
+  color: #103426;
+}
+.line {
+  width: 60%;
+  height: 0.5px;
+  background-color: #b1b1b1;
+}
+.aboutDesc {
+  width: 80%;
+  text-align: center;
+}
+.aboutDesc p {
+  line-height: 26px;
+  padding-top: 15px;
+  color: #4c4c4c;
+}

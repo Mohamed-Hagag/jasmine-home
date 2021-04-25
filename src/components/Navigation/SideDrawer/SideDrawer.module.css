@@ -1,0 +1,118 @@
+.sideDrawer {
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s ease-out;
+}
+@media (min-width: 899px) {
+  .sideDrawerShowed {
+    flex-direction: column;
+  }
+  .home {
+    display: flex;
+  }
+
+  .sideDrawerShowed li {
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .sideDrawerShowed li:hover {
+    background-color: #ceae6d;
+    transition: background-color 0.2s;
+  }
+  .sideDrawerShowed li:hover a {
+    color: white;
+    transition: color 0.3s;
+  }
+}
+.open {
+  transform: translateX(0);
+}
+.close {
+  transform: translateX(-150%);
+}
+
+.header {
+  height: 51px;
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #ebebeb;
+  padding-bottom: 2px;
+}
+.closeIcon {
+  position: absolute;
+  right: 0;
+  width: 48px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.closeIcon svg {
+  color: #103426;
+}
+.closeIcon:hover {
+  background-color: #ceae6d;
+  transition: background-color 0.3s;
+}
+.closeIcon:hover svg {
+  color: white;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-weight: 700;
+  font-family: "segoe ui light";
+}
+.icons {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+  font-weight: 400;
+  color: #103426;
+}
+.icons div {
+  padding: 10px;
+  cursor: pointer;
+}
+.icons div svg {
+  margin-bottom: 10px;
+}
+.icons span {
+  font-size: 10px;
+  font-weight: 700;
+}
+.icons div:hover svg {
+  color: #ceae6d;
+  transition: color 0.3s;
+}
+.cartIcon {
+  position: relative;
+  cursor: pointer;
+}
+.cartIcon:hover svg {
+  color: #ceae6d;
+}
+.cartIcon button {
+  position: absolute;
+  right: -1px;
+  top: -7px;
+  color: #fff;
+  background-color: #ceae6d;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 500;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+}

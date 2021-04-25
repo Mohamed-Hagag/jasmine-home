@@ -1,0 +1,49 @@
+.navigation {
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 350;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigationFixed {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: navAnimation 0.5s ease-out forwards;
+}
+@keyframes navAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navigationFixed nav {
+  padding-right: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 899px) {
+  .navItems {
+    display: none;
+  }
+  .navigation {
+    justify-content: space-between;
+  }
+  .navigationFixed {
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,284 @@
+.container {
+  width: 100%;
+  height: 620px;
+  clear: both;
+}
+@media (max-width: 850px) {
+  .container {
+    height: 560px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    height: 500px;
+  }
+}
+.layerContainer {
+  width: 20%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+}
+.layerContainer div {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../assets/images/bg3.jpg);
+  background-size: cover;
+}
+.firstLayer {
+  background-position: 0 0;
+  animation: firstScale 1s ease-out 5s;
+}
+.secondLayer {
+  animation: secondSlide 1s ease-out forwards, secondScale 1s ease-out 5s;
+}
+.thirdLayer {
+  animation: thirdSlide 1s ease-out forwards, thirdScale 1s ease-out 5s;
+}
+.fourthLayer {
+  animation: fourthSlide 1s ease-out forwards, fourthScale 1s ease-out 5s;
+}
+.fifthLayer {
+  animation: fifthSlide 1s ease-out forwards, fifthScale 1s ease-out 5s;
+}
+@keyframes secondSlide {
+  0% {
+    background-position: 0 0;
+  }
+}
+@keyframes thirdSlide {
+  0% {
+    background-position: 0 0;
+  }
+}
+@keyframes fourthSlide {
+  0% {
+    background-position: 10% 0;
+  }
+}
+@keyframes fifthSlide {
+  0% {
+    background-position: 15% 0;
+  }
+}
+
+@keyframes firstScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0.3;
+    background-position: 40% 0;
+  }
+}
+@keyframes secondScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0.3;
+    background-position: 50% 0;
+  }
+}
+@keyframes thirdScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    background-position: 50% 0;
+    opacity: 0.3;
+  }
+}
+@keyframes fourthScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0.3;
+    background-position: 55% 0;
+  }
+}
+@keyframes fifthScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0.3;
+    background-position: 60% 0;
+  }
+}
+.productDescContainer {
+  width: 100%;
+  height: 620px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.productDesc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .productDescContainer {
+    height: auto;
+    left: 20px;
+    top: 100px;
+  }
+  .productDesc {
+    width: 50%;
+  }
+}
+.wrapper {
+  width: 50%;
+  margin-top: 40px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+.title {
+  width: 100%;
+  z-index: inherit;
+  height: 160px;
+  margin-bottom: 50px;
+  text-align: left;
+  overflow: hidden;
+  font-size: 40px;
+  font-weight: 700;
+  color: #103426;
+}
+@media (max-width: 800px) {
+  .title {
+    font-size: 20px;
+    margin-top: 50px;
+    height: 100px;
+    margin-bottom: 0;
+  }
+}
+.title h2 {
+  transform: translateY(200%);
+  animation: descAnimation 4.8s ease-in-out 0.5s forwards infinite;
+  opacity: 0;
+}
+.descButton {
+  z-index: inherit;
+  margin-left: 20px;
+  height: 100px;
+  overflow: hidden;
+}
+.descButton button {
+  width: 120px;
+  padding: 12px 0;
+  border-radius: 20px;
+  border: 1px solid gray;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #fff;
+  z-index: 1;
+  background-color: #ceae6d;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(500%);
+  outline: none;
+  animation: butAnimation 4.8s ease-in-out 0.5s forwards infinite;
+}
+.descButton button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  opacity: 0;
+  border-radius: 20px;
+  background: #fff;
+  animation: buttonAnimation 0.5s forwards;
+}
+@keyframes buttonAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+}
+
+.descButton button:hover {
+  color: black;
+}
+.descButton button:hover::after {
+  animation: buttonHoverAnimation 0.5s forwards;
+}
+
+@keyframes buttonHoverAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  66% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes descAnimation {
+  0% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+}
+@keyframes butAnimation {
+  0% {
+    transform: translateY(500%);
+  }
+  23% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(500%);
+  }
+}

@@ -1,0 +1,56 @@
+.icons {
+  color: #103426;
+  display: flex;
+}
+.icons svg {
+  padding: 0 3px;
+  cursor: pointer;
+  box-sizing: unset;
+  transition: color 0.3s;
+}
+.icons svg:hover {
+  color: #ceae6d;
+}
+@media (max-width: 899px) {
+  .icons {
+    display: none;
+  }
+}
+
+.cartIcon {
+  position: relative;
+  cursor: pointer;
+}
+.cartIcon:hover svg {
+  color: #ceae6d;
+}
+.cartIcon button {
+  position: absolute;
+  right: -12px;
+  top: -16px;
+  color: #fff;
+  background-color: #ceae6d;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 500;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+}
+
+.changed {
+  animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

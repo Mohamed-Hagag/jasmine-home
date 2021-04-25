@@ -1,0 +1,77 @@
+.footerContainer {
+  width: 100%;
+  height: 300px;
+  padding-top: 40px;
+  background-color: #363636;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainLinks {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.mainLinks div:not(.underLine, .rights) {
+  width: 20%;
+}
+@media (max-width: 650px) {
+  .footerContainer {
+    height: 650px;
+  }
+  .mainLinks div:not(.underLine, .rights) {
+    width: 40%;
+    padding: 30px 0;
+  }
+}
+.mainLinks h6 {
+  color: #fff;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+.mainLinks p:not(.rightsText) {
+  color: #b1b1b1;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: 0.2s ease-in-out;
+}
+.mainLinks p:hover:not(.rightsText) {
+  color: #ceae6d;
+}
+.underLine {
+  width: 100%;
+  background-color: #b1b1b1;
+  height: 1px;
+  margin-top: 30px;
+}
+.socialIcons {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.socialIcons svg {
+  cursor: pointer;
+  color: #b1b1b1;
+  font-size: 1.2rem;
+  transition: 0.2s ease-in-out;
+}
+.socialIcons svg:hover {
+  color: #ceae6d;
+}
+.rights {
+  padding-top: 20px;
+  width: 300px;
+  text-align: right;
+}
+.rightsText {
+  color: #b1b1b1;
+}
+
+.rights span {
+  color: #ceae6d;
+  cursor: pointer;
+  font-weight: 500;
+}
