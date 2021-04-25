@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "./App.css";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Layout from "./components/Layout/Layout";
@@ -9,9 +9,18 @@ import JasmineProducts from "./components/JasmineProducts/JasmineProducts";
 import FeaturedProducts from "./components/FeaturedProducts/FeaturedProducts";
 import { Route, Switch } from "react-router-dom";
 import Product from "./pages/Product/Product";
+import Spinner from "./components/UI/Spinner/Spinner";
 
 export const App = () => {
   const [cartCount, setCartCount] = useState(3);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    window.addEventListener("load", () => {
+      setLoading(false);
+    });
+  }, []);
 
   const incrementCartCount = () => {
     setCartCount((prevCartCount) => prevCartCount + 1);
@@ -20,7 +29,9 @@ export const App = () => {
   const decrementCartCount = () => {
     setCartCount((prevCartCount) => prevCartCount - 1);
   };
-  return (
+  return loading ? (
+    <Spinner />
+  ) : (
     <Layout productsCount={cartCount}>
       <Switch>
         <Route
