@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/jasmine-home/static/css/main.95521c61.chunk.css",
+    "main.js": "/jasmine-home/static/js/main.9e0fa291.chunk.js",
+    "main.js.map": "/jasmine-home/static/js/main.9e0fa291.chunk.js.map",
+    "runtime-main.js": "/jasmine-home/static/js/runtime-main.0783fbc1.js",
+    "runtime-main.js.map": "/jasmine-home/static/js/runtime-main.0783fbc1.js.map",
+    "static/js/2.688cb9c9.chunk.js": "/jasmine-home/static/js/2.688cb9c9.chunk.js",
+    "static/js/2.688cb9c9.chunk.js.map": "/jasmine-home/static/js/2.688cb9c9.chunk.js.map",
+    "static/js/3.4fe0a39e.chunk.js": "/jasmine-home/static/js/3.4fe0a39e.chunk.js",
+    "static/js/3.4fe0a39e.chunk.js.map": "/jasmine-home/static/js/3.4fe0a39e.chunk.js.map",
+    "index.html": "/jasmine-home/index.html",
+    "static/css/main.95521c61.chunk.css.map": "/jasmine-home/static/css/main.95521c61.chunk.css.map",
+    "static/js/2.688cb9c9.chunk.js.LICENSE.txt": "/jasmine-home/static/js/2.688cb9c9.chunk.js.LICENSE.txt",
+    "static/media/SecondSlider.module.css": "/jasmine-home/static/media/366.c7f38d3d.jpg",
+    "static/media/Newsletter.module.css": "/jasmine-home/static/media/background.5d1b7250.jpg",
+    "static/media/FourthSlider.module.css": "/jasmine-home/static/media/background3.43573db9.jpg",
+    "static/media/FirstSlider.module.css": "/jasmine-home/static/media/bg3.8b0d8999.jpg",
+    "static/media/ThirdSlider.module.css": "/jasmine-home/static/media/bg3.ac18fa04.png",
+    "static/media/download.dcaaebe9.png": "/jasmine-home/static/media/download.dcaaebe9.png",
+    "static/media/product1.61dc16ef.jpg": "/jasmine-home/static/media/product1.61dc16ef.jpg",
+    "static/media/product13.3e48bbf5.webp": "/jasmine-home/static/media/product13.3e48bbf5.webp",
+    "static/media/product2.a6208dcb.jpg": "/jasmine-home/static/media/product2.a6208dcb.jpg",
+    "static/media/product3.13935a53.jpg": "/jasmine-home/static/media/product3.13935a53.jpg",
+    "static/media/product4.ad2d1669.jpg": "/jasmine-home/static/media/product4.ad2d1669.jpg",
+    "static/media/product5.c0f77a29.jpg": "/jasmine-home/static/media/product5.c0f77a29.jpg",
+    "static/media/product6.6b5cbeb2.jpg": "/jasmine-home/static/media/product6.6b5cbeb2.jpg",
+    "static/media/product7.5816af06.jpg": "/jasmine-home/static/media/product7.5816af06.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0783fbc1.js",
+    "static/js/2.688cb9c9.chunk.js",
+    "static/css/main.95521c61.chunk.css",
+    "static/js/main.9e0fa291.chunk.js"
+  ]
+}
