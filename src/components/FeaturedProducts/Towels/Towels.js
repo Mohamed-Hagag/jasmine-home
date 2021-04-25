@@ -6,7 +6,6 @@ import product3 from "../../../assets/images/product3.jpg";
 import product4 from "../../../assets/images/product4.jpg";
 import product5 from "../../../assets/images/product5.jpg";
 import product6 from "../../../assets/images/product6.jpg";
-import product7 from "../../../assets/images/product7.jpg";
 import { NavLink } from "react-router-dom";
 
 import styles from "./Towels.module.css";
@@ -24,7 +23,7 @@ const Towels = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product1} ref={firstImg} />
+            <img src={product1} alt="product1" ref={firstImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {
@@ -106,7 +105,7 @@ const Towels = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product1} ref={secondImg} />
+            <img src={product1} alt="product1" ref={secondImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {
@@ -188,7 +187,7 @@ const Towels = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product1} ref={thirdImg} />
+            <img src={product1} alt="product1" ref={thirdImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {
@@ -269,7 +268,7 @@ const Towels = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product1} ref={fourthImg} />
+            <img src={product1} alt="product1" ref={fourthImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState } from "react";
 import styles from "./Slider.module.css";
 import FirstSlider from "./FirstSlider/FirstSlider";
 import SecondSlider from "./SecondSlider/SecondSlider";

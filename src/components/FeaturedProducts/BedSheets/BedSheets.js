@@ -22,7 +22,7 @@ const BedSheets = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product3} ref={firstImg} />
+            <img src={product3} alt="product3" ref={firstImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {
@@ -104,7 +104,7 @@ const BedSheets = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product3} ref={secondImg} />
+            <img src={product3} alt="product3" ref={secondImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {
@@ -186,7 +186,7 @@ const BedSheets = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product3} ref={thirdImg} />
+            <img src={product3} alt="product3" ref={thirdImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {
@@ -267,7 +267,7 @@ const BedSheets = (props) => {
       <div className={styles.featuredProduct}>
         <NavLink to={`/${path}`}>
           <div className={styles.imgContainer}>
-            <img src={product3} ref={fourthImg} />
+            <img src={product3} alt="product3" ref={fourthImg} />
             <button
               className={styles.addRemoveButton}
               onClick={(e) => {

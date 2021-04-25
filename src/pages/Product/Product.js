@@ -33,7 +33,7 @@ const Product = (props) => {
     <div className={styles.featuredProductsContainer}>
       <div className={styles.featuredProduct}>
         <div className={styles.imgContainer}>
-          <img src={getImg()} ref={firstImg} />
+          <img src={getImg()} alt="product" ref={firstImg} />
           <div className={styles.sale}>
             <span>Sale</span>
           </div>

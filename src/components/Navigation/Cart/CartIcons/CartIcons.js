@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as BiIcons from "react-icons/bi";
 import styles from "./CartIcons.module.css";
 

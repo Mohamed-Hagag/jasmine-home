@@ -5,14 +5,14 @@ import SecondSlider from "../SecondSlider/SecondSlider";
 const FirstSlider = (props) => {
   const [width, setWidth] = useState();
   const [backgroundImage, setBackground] = useState(1);
-
+  const { sliderNum } = props;
   useEffect(() => {
     let timeout = setTimeout(() => {
       setBackground(2);
     }, 5500);
     props.sliderNum(backgroundImage);
     return () => clearTimeout(timeout);
-  }, []);
+  }, [sliderNum]);
 
   useEffect(() => {
     setWidth(window.innerWidth);

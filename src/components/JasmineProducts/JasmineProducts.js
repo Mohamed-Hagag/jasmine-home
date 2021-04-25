@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./JasmineProducts.module.css";
 import product1 from "../../assets/images/product3.jpg";
 import product2 from "../../assets/images/product13.webp";
