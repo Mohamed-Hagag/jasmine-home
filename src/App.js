@@ -36,6 +36,7 @@ export const App = () => {
       <Switch>
         <Route
           path="/:product"
+          exact
           render={(props) => (
             <Product {...props} addProduct={incrementCartCount} />
           )}
