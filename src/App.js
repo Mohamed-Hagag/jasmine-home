@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
-import "./App.css";
+import styles from "./App.module.css";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Layout from "./components/Layout/Layout";
 import Slider from "./components/Slider/Slider";
@@ -33,6 +33,7 @@ export const App = () => {
     <Spinner />
   ) : (
     <Layout productsCount={cartCount}>
+      <div className={styles.preLoadImages}></div>
       <Switch>
         <Route
           path="/:product"

@@ -1,3 +1,10 @@
+.preLoadImages {
+  background: url(../../assets/images/bg3.jpg) no-repeat -9999px -9999px,
+    url(../../assets/images/background3.jpg) no-repeat -9999px -9999px,
+    url(../../assets/images/366.jpg) no-repeat -9999px -9999px,
+    url(../../assets/images/bg3.png) no-repeat -9999px -9999px;
+}
+
 .container {
   position: relative;
   width: 100%;
