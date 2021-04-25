@@ -35,13 +35,6 @@ export const App = () => {
     <Layout productsCount={cartCount}>
       <Switch>
         <Route
-          path="/:product"
-          exact
-          render={(props) => (
-            <Product {...props} addProduct={incrementCartCount} />
-          )}
-        />
-        <Route
           path="/"
           exact
           render={(props) => (
@@ -51,6 +44,14 @@ export const App = () => {
               addProduct={incrementCartCount}
               deleteProduct={decrementCartCount}
             />
+          )}
+        />
+
+        <Route
+          path="/:product"
+          exact
+          render={(props) => (
+            <Product {...props} addProduct={incrementCartCount} />
           )}
         />
       </Switch>
